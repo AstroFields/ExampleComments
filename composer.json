@@ -19,20 +19,32 @@
     "require"     : {
         "php"                        : ">=5.3",
         "composer/installers"        : "~1.0",
-        "wcm/astrofields"            : "*",
-        "wcm/astrofields-standards"  : "*",
-        "wcm/astrofields-publicform" : "*",
-        "wcm/astrofields-comments"   : "*"
+        "WCM/AstroFields"            : "*",
+        "WCM/AstroFields/Standards"  : "*",
+        "WCM/AstroFields/PublicForm" : "*",
+        "WCM/AstroFields/Comments"   : "*"
     },
     "repositories": [
         {
             "type" : "vcs",
             "url"  : "https://github.com/AstroFields/Core"
+        },
+        {
+            "type" : "vcs",
+            "url"  : "https://github.com/AstroFields/Standards"
+        },
+        {
+            "type" : "vcs",
+            "url"  : "https://github.com/AstroFields/PublicForm"
+        },
+        {
+            "type" : "vcs",
+            "url"  : "https://github.com/AstroFields/Comments"
         }
     ],
     "autoload"    : {
         "psr-4" : {
-            "WCM\\AstroFields\\" : "src\\"
+            "WCM\\AstroFieldExampleComments\\" : "src\\"
         }
     }
 }
