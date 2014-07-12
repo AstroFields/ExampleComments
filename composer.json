@@ -23,6 +23,12 @@
         "wcm/astrofields-publicform" : "*",
         "wcm/astrofields-comments"   : "*"
     },
+    "repositories": [
+        {
+            "type" : "vcs",
+            "url"  : "https://github.com/AstroFields/Core"
+        }
+    ],
     "autoload"    : {
         "psr-4" : {
             "WCM\\AstroFields\\" : "src\\"
