@@ -19,7 +19,7 @@
     "require"     : {
         "php"                        : ">=5.3",
         "composer/installers"        : "~1.0",
-        "WCM/AstroFields"            : "*",
+        "WCM/AstroFields/Core"       : "*",
         "WCM/AstroFields/Standards"  : "*",
         "WCM/AstroFields/PublicForm" : "*",
         "WCM/AstroFields/Comments"   : "*"
