@@ -1,11 +1,15 @@
 <?php
 
-namespace WCM;
+namespace WCM\AstroFields\Examples\Comments;
 
 /**
  * Plugin Name: (WCM) AstroFields Comments Example
  * Description: Comment form fields example plugin
  */
+
+// Composer autoloader
+require_once __DIR__."/vendor/autoload.php";
+
 
 use WCM\AstroFields\Core\Mediators\Entity;
 
@@ -17,11 +21,6 @@ use WCM\AstroFields\Standards\Templates\InputFieldTmpl;
 use WCM\AstroFields\Standards\Templates\TextareaFieldTmpl;
 
 use WCM\AstroFields\Comments\Commands\CommentViewCmd;
-
-
-// Drop in Composer autoloader
-require_once plugin_dir_path( __FILE__ )."vendor/autoload.php";
-
 
 add_action( 'comment_form_before_fields', function()
 {
