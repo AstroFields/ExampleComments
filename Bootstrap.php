@@ -36,13 +36,13 @@ add_action( 'comment_form_before_fields', function()
 	$author_field = new Entity( 'comment_form_field_author' );
 	$author_field
 		->attach( $author_label, array(
-				'proxy' => array( 'author', ),
-				'label' => 'Hello!',
-			) )
+			'proxy' => array( 'author', ),
+			'label' => 'Hello!',
+		) )
 		->attach( $author_view, array(
-				'proxy'   => array( 'author', ),
-				'default' => 'Hello!',
-			) );
+			'proxy'   => array( 'author', ),
+			'default' => 'Hello!',
+		) );
 
 
 	$email_view = new CommentViewCmd;
@@ -50,9 +50,9 @@ add_action( 'comment_form_before_fields', function()
 
 	$email_field = new Entity( 'comment_form_field_email' );
 	$email_field->attach( $email_view, array(
-			'proxy'   => array( 'email', ),
-			'default' => 'Email',
-		) );
+		'proxy'   => array( 'email', ),
+		'default' => 'Email',
+	) );
 
 
 	$url_view = new CommentViewCmd;
@@ -60,9 +60,9 @@ add_action( 'comment_form_before_fields', function()
 
 	$url_field = new Entity( 'comment_form_field_url' );
 	$url_field->attach( $url_view, array(
-			'proxy'   => array( 'url', ),
-			'default' => 'URL',
-		) );
+		'proxy'   => array( 'url', ),
+		'default' => 'URL',
+	) );
 
 	$comment_view = new CommentViewCmd;
 	$comment_view->setTemplate( new TextareaFieldTmpl );
@@ -70,6 +70,6 @@ add_action( 'comment_form_before_fields', function()
 	$comment_field = new Entity( 'comment_form_field_comment' );
 	$comment_field
 		->attach( $comment_view, array(
-				'proxy' => array( 'comment', ),
-			) );
+			'proxy' => array( 'comment', ),
+		) );
 } );
